@@ -1,0 +1,136 @@
+#project {
+
+    width: 320px;
+    height: 450px;
+    float: left;
+    background-color:white;
+    color:black;
+    text-align:center;
+    border: 2px solid green;
+
+}
+
+
+/* change the color of all clickble links or emails to red when youre hovering over them */
+a:link    {                                                                   
+     color:green; background-color:transparent; text-decoration:none
+     }
+    a:visited {
+     color:#7d4627; background-color:transparent; text-decoration:none
+     }
+    a:hover   {
+     color:red; background-color:transparent; text-decoration:underline
+     }
+    a:active  {
+     color:yellow; background-color:transparent; text-decoration:underline
+     }
+
+body {
+    padding-top: 50px; /* paddong for hight of nav bar */
+}
+
+/* Header Image Background */
+
+.webpage-header {
+    height: 400px;
+    /* background: url('http://placehold.it/1920x400') center center no-repeat scroll; */
+    content:url("acmPicture4.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+/* Customization of the text color and shadow color and to optimize text legibility. */
+
+.tagline {
+    text-shadow: 0 0 10px #000;
+    color: #fff;
+}
+
+.img-center {
+    margin: 0 auto;
+}
+
+footer {
+    margin: 50px 0;
+}
+
+/* validation div  */ 
+#validation{
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+
+/* maps */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        height: 100%;
+      }
+      #floating-panel {
+        position: absolute;
+        top: 10px;
+        left: 25%;
+        z-index: 5;
+        background-color: #fff;
+        padding: 5px;
+        border: 1px solid #999;
+        text-align: center;
+        font-family: 'Roboto','sans-serif';
+        line-height: 30px;
+        padding-left: 10px;
+      }
+      #right-panel {
+        font-family: 'Roboto','sans-serif';
+        line-height: 30px;
+        padding-left: 10px;
+      }
+
+      #right-panel select, #right-panel input {
+        font-size: 15px;
+      }
+
+      #right-panel select {
+        width: 100%;
+      }
+
+      #right-panel i {
+        font-size: 12px;
+      }
+
+      /* panel to the right of the map that pops up when directions are inputed */
+      #right-panel {
+        height: 100%;
+        float: right;
+        width: 390px;
+        overflow: auto;
+        background-color: gold;
+      }
+      #map {
+        margin-right: 400px;
+      }
+      #floating-panel {
+        background: #fff;
+        padding: 5px;
+        font-size: 14px;
+        font-family: Arial;
+        border: 1px solid #ccc;
+        box-shadow: 0 2px 2px rgba(33, 33, 33, 0.4);
+        display: none;
+      }
+      @media print {
+        #map {
+          height: 500px;
+          margin: 0;
+        }
+        #right-panel {
+          float: none;
+          width: auto;
+        }
+      }
