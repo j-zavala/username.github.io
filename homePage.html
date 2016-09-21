@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--using the viewport with bootstrap to make it smartphone friendly-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Final project for INF 201. Decided to make it a website for my club since ACM doesnt have one!">
+    <meta name="author" content="Arnoldas Kurbanovas">
+
+    
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    
+
+    <!--font from google developer fonts thats open source and free to use-->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:600' rel='stylesheet' type='text/css'>
+
+    <title>ACM Website</title>
+
+    <!-- some parts used from Bootstrap Core CSS and bootstrap framework
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    -->
+    <!-- Custom CSS 
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/business-frontpage.css" rel="stylesheet">
+    -->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!--
+                <a class="navbar-brand" href="#">first heading box</a>
+                -->
+                <a class="navbar-brand" href="../../index.html" target="_blank">University at Albany, State University of New York</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="homePage.html" target="_blank">HomePage</a>
+                    </li>
+                    
+                    <li>
+                        <a href="events.html" target="_blank">Events</a>
+                    </li>
+                    <li>
+                        <a href="projects.html" target="_blank">Projects</a>
+                    </li>
+                    <li>
+                        <a href="directions.html" target="_blank">Directions Page</a>
+                    </li>
+                    <li>
+                        <a href="map.html" target="_blank">Map</a>
+                    </li>
+                    <li>
+                        <a href="homePage.html#contact">Contact</a>
+                        <!--
+                        <p align="center"><a href="#contact">Go to my information</a></p>
+                        -->
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/groups/Albany.ACM/" target="_blank"><img src="img/facebook.jpeg" /></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/UAlbany-acm" target="_blank"><img src="img/github.jpeg" /></a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Image Background Page Header -->
+    <header class="webpage-header">
+    <!--
+    <img src='gimpAssignment3.png' style="width:100px; height:100px; padding: 8px; background: url(gimpAssignment3.png);">
+    -->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="tagline">UALBANY ASSOCIATION FOR COMPUTING MACHINERY</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <hr>
+
+        <div class="row">
+            <div class="col-sm-8">
+                <h2>What We Do</h2>
+                <p>This is the student chapter of ACM at the University at SUNY Albany. ACM consists of some of the best leaders in the computer science department. We run workshops, collaborative coding nights, study sessions, and we aim to provide help and guidance to the students in the College of Computing and Information. We are working to bridge the gaps between the different departments in college. We plan to provide many informational and social event opportunities as well as anything else that may be in demand. We want to strengthen the learning community in CEAS, and make it more peer-based.
+                </p>
+                
+                <p>
+                    <a class="btn btn-default btn-lg" href="homePage.html#">Go To Top &raquo;</a>
+                </p>
+            </div>
+            <div class="col-sm-4">
+                <!--
+                <h2>Contact Information</h2>
+                -->
+                <h2><a name="contact">Contact Information</a></h2>
+                
+                <address>
+                    <strong>Address:</strong>
+                    <br>1400 Washington ave
+                    <br>Albany, NY 12222
+                    <br>
+                </address>
+                <address>
+                    <abbr title="Phone">Phone #:</abbr> Under Construction!
+                    <br>
+                    <p></p>
+                    <abbr title="Email">Email:</abbr> <a href="mailto:#">acm.albany@gmail.com</a>
+                    <p>Email us to be added to our e-mail list:</p>
+                </address>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <div class="row">
+            <div class="col-sm-4">
+                <img class="img-circle img-responsive img-center" src="img/albanyOS3.jpg" alt="img/albanyOS3.jpg">
+                <br>
+                <br>
+
+                <h2>Events:</h2>
+                <ul>
+                    <!-- first list item is putting out todays date, function is in javascript code! -->
+                    <li><h5>Today's Date: </h5>
+                    <script src="js/javascript.js" type="text/javascript">
+                    </script>
+                    <div id="clockbox"></div>
+                    <li>Upcoming Events</li>
+                    <li>Past Events</li>
+                    <li>Contact if you have any ideas for future events, workshops or ideas</li>
+                </ul>
+            </div>
+
+            <div class="col-sm-4">
+                <img class="img-circle img-responsive img-center" src="UAlbanyGithub.png" alt="UAlbanyGithub.png">
+                
+                <h2>Board Members:</h2>
+                <!-- listing eboard members using a list -->
+                <table style="width:100%">
+                  <tr>
+                    <th>Position</th>
+                    <th>Firstname</th>
+                    <th>Lastname</th> 
+                    
+                  </tr>
+                  <tr>
+
+                    <td>Project Coordinator:</td>
+                    <td>Arnoldas</td>
+                    <td>Kurbanovas</td> 
+                    
+                  </tr>
+                  <tr>
+                    <td>Chair:</td>
+                    <td>Grant</td> 
+                    <td>Richman</td>
+                  </tr>
+                  <tr>
+                    <td>Vice Chair:</td>
+                    <td>Kana</td> 
+                    <td>Kihara</td>
+                  </tr>
+                  <tr>
+                    <td>Treasurer:</td>
+                    <td>Elliott</td> 
+                    <td>Weintraub</td>
+                  </tr>
+                  <tr>
+                    <td>Public Relations:</td>
+                    <td>Jack</td> 
+                    <td>Hurwitz</td>
+                  </tr>
+                  <tr>
+                    <td>Web Master:</td>
+                    <td>Johnny</td> 
+                    <td>Zavala</td>
+                  </tr>
+                </table>
+
+            </div>
+            
+            <div class="col-sm-4">
+                <img class="img-circle img-responsive img-center" src="podium.jpg" alt="podium.jpg">
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <h2>Links:</h2>
+                    <p><a href="https://albany.collegiatelink.net/organization/acm" >ACM MyInvolment</a></p>
+                    <p><a href="https://calendar.google.com/calendar/embed?src=acm.albany@gmail.com&amp;ctz=America/New_York&amp;pli=1" >Event Calendar</a></p>
+                    <p><a href="https://github.com/UAlbany-acm" >ACM github</a></p> 
+                    <p><a href="https://www.facebook.com/groups/Albany.ACM/" >Click Me to join our facebook group</a></p> 
+            </div>
+            
+        </div>
+        <!-- /.row -->
+
+        <!-- Free website background music player from www.soundimage.eu START //-->
+        <script id="player_type" language="javascript" type="text/javascript"> 
+        var player_id=1; 
+        var soundimage_player_start = 1; 
+        document.write('<div id="soundimage_holder'+player_id+'" align="center">');
+        document.write('<div id="soundimage_player_main'+player_id+'"></div>'); 
+        document.write('<a id="soundimage_player_links'+player_id+'" href="http://www.soundimage.eu/" target="_blank" title="Royalty Free Music">Royalty Free Music</a>');
+        </script> 
+        <script id="player_script" src="http://www.soundimage.pl/freemusic/soundimage_player_en2.js" language="javascript" type="text/javascript"></script> 
+        </div>
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Arnoldas Kurbanovas 2016 | <a href="mailto:akurbanovas@albany.edu">akurbanovas@albany.edu</a></p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
+
+</body>
+
+</html>

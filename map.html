@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <!-- My google maps API KEY: AIzaSyApe2FXnGsPfnSGmArQpepzbKk3MZBnW-E -->
+
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+        <link rel="stylesheet" href="css/bootstrap.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>Displaying text directions with <code>setPanel()</code></title>
+
+  </head>
+  <body>
+  <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!--
+                <a class="navbar-brand" href="#">first heading box</a>
+                -->
+                <a class="navbar-brand" href="../../index.html" target="_blank">University at Albany, State University of New York</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="homePage.html" target="_blank">HomePage</a>
+                    </li>
+                    
+                    <li>
+                        <a href="events.html" target="_blank">Events</a>
+                    </li>
+                    <li>
+                        <a href="projects.html" target="_blank">Projects</a>
+                    </li>
+                    <li>
+                        <a href="directions.html" target="_blank">Directions Page</a>
+                    </li>
+                    <li>
+                        <a href="map.html" target="_blank">Map</a>
+                    </li>
+                    <li>
+                        <a href="map.html#contact">Contact</a>
+                        <!--
+                        <p align="center"><a href="#contact">Go to my information</a></p>
+                        -->
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/groups/Albany.ACM/" target="_blank"><img src="img/facebook.jpeg" /></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/UAlbany-acm" target="_blank"><img src="img/github.jpeg" /></a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    <div id="floating-panel">
+      <strong>Start:</strong>
+      <select id="start">
+        <option value="albany, ny">Albany</option>
+        <option value="st louis, mo">St Louis</option>
+        <option value="joplin, mo">Joplin, MO</option>
+        <option value="oklahoma city, ok">Oklahoma City</option>
+        <option value="amarillo, tx">Amarillo</option>
+        <option value="gallup, nm">Gallup, NM</option>
+        <option value="flagstaff, az">Flagstaff, AZ</option>
+        <option value="winona, az">Winona</option>
+        <option value="kingman, az">Kingman</option>
+        <option value="barstow, ca">Barstow</option>
+        <option value="san bernardino, ca">San Bernardino</option>
+        <option value="los angeles, ca">Los Angeles</option>
+      </select>
+      <br>
+      <strong>End:</strong>
+      <select id="end">
+        <option value="albany, ny">Albany</option>
+        <option value="st louis, mo">St Louis</option>
+        <option value="joplin, mo">Joplin, MO</option>
+        <option value="oklahoma city, ok">Oklahoma City</option>
+        <option value="amarillo, tx">Amarillo</option>
+        <option value="gallup, nm">Gallup, NM</option>
+        <option value="flagstaff, az">Flagstaff, AZ</option>
+        <option value="winona, az">Winona</option>
+        <option value="kingman, az">Kingman</option>
+        <option value="barstow, ca">Barstow</option>
+        <option value="san bernardino, ca">San Bernardino</option>
+        <option value="los angeles, ca">Los Angeles</option>
+      </select>
+    </div>
+    <div id="right-panel"></div>
+
+      <!-- DOM element map-->
+
+    <div id="map"></div>
+    
+      <!-- JavaScript -->
+    <script src="js/javascript.js"></script>
+    
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyApe2FXnGsPfnSGmArQpepzbKk3MZBnW-E&amp;callback=initMap">
+    </script>
+  </body>
+</html>
